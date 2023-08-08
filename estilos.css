@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("./IngresoSolidario_ResourcesStudents/Fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% -100%;
+    position: relative;
+    top: 0%;
+}
+.container-menu{
+    width: 100%;
+    height: 15%;
+    background-color: #386ccc;
+    padding: 0 3.13rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+.logo{
+    display: none;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr); 
+    background-color: #386ccc;
+}
+.items{
+    display: grid;
+    grid-column: span 1;
+    place-items: center;
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+}
+.item_gobierno:hover{
+    cursor: pointer;
+}
+.item_gobierno img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.btn{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: grid;
+    align-self: center;
+    background-color: #fff;
+    font-size: large;
+    color: #000;  
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #B3B6B7;
+}
+.mostrar-menu,
+  .esconder-menu {
+    font-size: 5rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+  }
+  .mostrar-menu {
+    order: 1;
+  }
+  .menu a:hover,
+  .mostrar-menu:hover,
+  .esconder-menu:hover {
+    color: #B3B6B7;
+}
+#check {
+    display: none;
+}
+.container-principal{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container_formulario{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: span 1;
+    place-items: center;
+}
+.item_input{
+    width: 70%;
+    height: auto;
+    display: grid;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.container_informacion{
+    display: grid;
+    grid-column: span 1;
+    place-content: center;
+}
+.title,.subtitle{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.title_info{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: xx-large;
+}
+.subtitle_info{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+.btn2{
+    display: grid;
+    place-items: center;
+    place-self: center;
+    font-size: x-large;
+    background-color: #157ffb;
+    color: #fff;
+    margin-top: 1rem;
+}
+.btn3{
+    display: grid;
+    place-items: center;
+    place-self: center;
+    background-color: #157ffb;
+    color: #fff;
+}
+
+.container-article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+    gap: 2rem;
+    margin-top: 10rem;
+    place-items: center;
+}
+.title_article{
+    display: grid;
+    grid-column: span 2;
+    text-align: center;
+    font-size: xx-large;
+}
+.article_info{
+    text-align: center;
+}
+.article_info p{
+    font-size: x-large;
+}
+.imagen{
+    width: 80%;
+    height: 80%;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conocer_etapas{
+    text-align: center;
+}
+
+.etapas-entrega{
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 5rem;
+}
+.bancos1{
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: flex-start;
+}
+.etapas-entrega h2{
+    display: grid;
+    grid-column: span 3;
+    text-align: center;
+    font-size: xx-large;
+    color: rgba(0, 0, 0, 0.726)
+
+}
+.bancos1 h2{
+    display: grid;
+    grid-column: span 3;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5rem;
+    color: rgba(0, 0, 0, 0.726)
+}
+.etapa1,.etapa2,.etapa3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+.etapa1 h3,.etapa2 h3,.etapa3 h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+.bancamia,.bancolombia,.caja_social{
+    width: 60%;
+    height: auto;
+    display: grid;
+    place-self: center;
+
+}
+.bancamia img,.bancolombia img,.caja_social img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bancos2{
+    width: 100%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content: flex-start;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+.movii{
+    display: grid;
+    grid-column: span 1;
+    width: 25%;
+    height: auto;
+    justify-self: flex-end;
+    align-self: center;
+}
+.daviplata{
+    display: grid;
+    grid-column: span 1;
+    width: 25%;
+    height: auto;
+    justify-self: flex-start;
+    align-self: center;
+}
+.preguntas_frecuentes{
+    display: grid;
+    grid-column: 1/3;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    gap: 3rem;
+}
+.extra1{
+    height: 2rem;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.726)
+
+}
+
+.extra2{
+    height: 2rem;
+    font-size: large;
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.726)
+
+}
+.extra3{
+    height: 0.1rem;
+    font-size: large;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.726)
+
+}
+.btn_items{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: #157ffb;
+    font-size: xx-large;
+}
+
+.preguntas_frecuentes h2{
+    width: 80%;
+    text-align: center;
+    font-size: xx-large;
+}
+.preguntas_frecuentes p{
+    width: 60%;
+    text-align: center;
+    font-size: x-large;    
+}
+.contactenos{
+    width: 80%;
+    height: 15rem;
+    background-color: #157ffb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+}
+.contactenos h2,.contactenos h3{
+    font-size: x-large;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+.contactenos button{
+    width: 15%;
+    height: 10rem;
+    font-size: large;
+    border-radius: 1rem;
+    color: #000;
+    margin-bottom: 1rem;
+    border: none;
+}
+.container-footer{
+    margin-top: 185rem;
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #3669c9;
+    place-items: center;
+    position: absolute;
+    top: 290%;
+}
+.ubicacion,.telefonos{
+    display: flex;
+    flex-direction: column;
+}
+.ubicacion i,.ubicacion h3,.telefonos i,.telefonos h3{
+    font-size: medium;
+    text-align: center;
+    color: #fff;
+}
+.gov{
+    display: flex;
+    width: 25rem;
+    height: 5rem;
+}
+.gov img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 62.5rem){
+    body{
+        background-position: 50% -100%
+    }
+    .items{
+        display: grid;
+        grid-column: span 1;
+        place-items: center;
+        color: #fff;
+        font-size: large;
+        text-decoration: none;
+    }
+    .item_gobierno img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .btn{
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 3rem;
+        display: grid;
+        align-self: center;
+        background-color: #fff;
+        font-size: medium;
+        color: #000;  
+    }
+    .item_input{
+        width: 90%;
+        height: 90%;
+        display: grid;
+        gap: 2rem;
+        background-color: #fff;
+        padding: 1.2rem;
+        border-radius: 1.5rem;
+    }
+    .title_info{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-size: x-large;
+    }
+    .subtitle_info{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-size: large;
+    }
+    .btn2{
+        display: grid;
+        place-items: center;
+        place-self: center;
+        font-size: large;
+        background-color: #157ffb;
+        color: #fff;
+        margin-top: 1rem;
+    }
+    .btn3{
+        display: grid;
+        place-items: center;
+        place-self: center;
+        background-color: #157ffb;
+        color: #fff;
+    }
+    .container-article{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-content: center;
+        margin-top: 5rem;
+        gap: 4rem;
+
+    }
+    .title_article{
+        display: grid;
+        grid-column: span 2;
+        text-align: center;
+        font-size: x-large;
+    }
+    .article_info{
+        text-align: center;
+    }
+    .article_info p{
+        font-size: large;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .conocer_etapas{
+        text-align: center;
+    }
+    .conocer_etapas h3{
+        font-size: large;
+    }
+    .conocer_etapas a{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 48rem){
+    body{
+        background-position: 75% -100%
+    }
+        /* HEADER */
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+        display: flex;
+        order: -1;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c2b47;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+        background-color: #386ccc;
+    }
+    .item_gobierno{
+        display: none;
+    }
+    .menu a,.menu div img {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .container-principal{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+    .container_formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_input{
+        width: 70%;
+        height: 70%;
+        display: grid;
+        gap: 2rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        background-color: #fff;
+    }
+    .container_informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        order: -1;
+        margin-top: 5rem;
+    }
+    .title,.subtitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .title_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .subtitle_info{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-size: x-large;
+    }
+    .btn2{
+        width: 30%;
+        height: auto;
+        display: grid;
+        place-items: center;
+        place-self: center;
+        font-size: x-large;
+        background-color: #157ffb;
+        color: #fff;
+        margin-top: 1rem;
+    }
+    .btn3{
+        display: grid;
+        place-items: center;
+        place-self: center;
+        background-color: #157ffb;
+        color: #fff;
+    }
+    .container-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45rem;
+
+    }
+    .title_article{
+        text-align: center;
+        font-size: x-large;
+    }
+    .article_info{
+        text-align: center;
+    }
+    .article_info p{
+        font-size: large;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .conocer_etapas{
+        text-align: center;
+    }
+    .conocer_etapas h3{
+        font-size: x-large;
+    }
+    .conocer_etapas a{
+        font-size: x-large;
+    }
+    }
+@media only screen and (max-width: 25rem){
+    .container-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35rem;
+
+    }
+    .title_article{
+        text-align: center;
+        font-size: x-large;
+    }
+    .article_info{
+        text-align: center;
+    }
+    .article_info p{
+        font-size: large;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .imagen img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .conocer_etapas{
+        text-align: center;
+    }
+    .conocer_etapas h3{
+        font-size: x-large;
+    }
+    .conocer_etapas a{
+        font-size: x-large;
+    }
+    }
